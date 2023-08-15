@@ -1,0 +1,14 @@
+{
+  "name": "@example-monorepo/design-system",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "lint": "eslint --ext .tsx --ext .ts src/"
+  }
+}
