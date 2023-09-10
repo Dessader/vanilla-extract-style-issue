@@ -1,5 +1,5 @@
 import { globalStyle, style } from "@vanilla-extract/css";
-import { cssVars } from "@example-monorepo/design-system";
+import { cssVars } from "@example-monorepo/design-system/vars";
 
 globalStyle("*, html, body", {
 	margin: 0,

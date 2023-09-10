@@ -1,2 +1,2 @@
-export { cssVars } from "./vars/cssVars.css";
-export * from "./components/Box";
+export * from "./components";
+export * from "./vars";
