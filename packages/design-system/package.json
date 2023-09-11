@@ -3,12 +3,27 @@
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./vars": {
+      "import": "./dist/vars/index.mjs",
+      "require": "./dist/vars/index.js"
+    },
+    "./styles": {
+      "import": "./dist/vars/cssVars.css",
+      "require": "./dist/vars/cssVars.css"
+    }
+  },
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "lint": "eslint --ext .tsx --ext .ts src/"
+  },
+  "devDependencies": {
+    "rollup-plugin-esbuild": "^5.0.0"
   }
 }
